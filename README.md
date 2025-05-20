@@ -7,16 +7,16 @@ A personal project to solve the exercises from the book *Exercises for Programme
 #### Chapter 2: Input, Processing, and Output
 | Exercise | dependencies | Memo  | Lv.  |
 | -------- | -------------| ----- | -----:|
-| Ex01 [ ] [Saying Hello](lib/ex01/main.ex)                      | | |_(1)
-| Ex02 [ ] [Counting the Number of Characters](lib/ex02/main.ex) | | |_(1)
-| Ex03 [ ] [Printing Quotes](lib/ex03/main.ex)                   | | |_(1)
+| Ex01 [x] [Saying Hello](lib/ex01/main.ex)                      | | |1(1)
+| Ex02 [x] [Counting the Number of Characters](lib/ex02/main.ex) | | |1(1)
+| Ex03 [x] [Printing Quotes](lib/ex03/main.ex)                   | | |1(1)
 | Ex04 [ ] [Mad Lib](lib/ex04/main.ex)                           | | |
 | Ex05 [ ] [Simple Math](lib/ex05/main.ex)                       | | |
 | Ex06 [ ] [Retirement Calculator](lib/ex06/main.ex)             | | |_(1)
 #### Chapter 3: Calculations
 | Exercise | dependencies | Memo  | Lv.  |
 | -------- | -------------| ----- | -----:|
-| Ex07 [ ] [Area of a Rectangular Room](lib/ex07/main.ex)    | | |_(1)
+| Ex07 [x] [Area of a Rectangular Room](lib/ex07/main.ex)    | | |2(1)
 | Ex08 [ ] [Pizza Party](lib/ex08/main.ex)                   | |
 | Ex09 [ ] [Paint Calculator](lib/ex09/main.ex)              | |
 | Ex10 [ ] [Self-Checkout](lib/ex10/main.ex)                 | |
@@ -125,3 +125,4 @@ Obi-Wan Kenobi says, "These aren't the droids you're looking for."
 
 ## References
 - [Exercises for Programmers](https://www.oreilly.com/library/view/exercises-for-programmers/9781680501513/)
+- [Elixir Kernel (doc)](https://hexdocs.pm/elixir/1.18.3/Kernel.html)
