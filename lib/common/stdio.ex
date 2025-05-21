@@ -9,7 +9,7 @@ defmodule Common.Stdio do
     end
   end
 
-  def read_input(prompt) do
+  def read_int(prompt, error_msg) do
     parseInt = fn
       str ->
         case Integer.parse(str) do
@@ -17,7 +17,6 @@ defmodule Common.Stdio do
           _         -> :error
         end
     end
-    error_msg = "Invalid input. Please enter a number."
     read_valid prompt, parseInt, error_msg
   end
 end
