@@ -10,17 +10,16 @@ import Common.Stdio
 
 defmodule Ex10.Main do
   def read_price_cent(n) do
-    parseTwoDigits = fn
-      str ->
+    read_valid(
+      "Enter the price of item #{n}: ",
+      "Invalid price.",
+      fn str ->
         case Regex.run(~r/^(0|[1-9][0-9]*)(\.[0-9]{1,2})?$/, String.trim(str), capture: :first) do
           nil -> :error
           [s] -> String.trim(s) |> Float.parse() |> elem(0)
         end
-    end
-    read_valid(
-      "Enter the price of item #{n}: ",
-      parseTwoDigits,
-      "Invalid price.")
+      end
+    )
   end
 
   def read_quantity(n) do

@@ -1,9 +1,9 @@
 defmodule Common.Stdio do
-  def read_valid(prompt, converter, error_msg) do
+  def read_valid(prompt, error_msg, converter) do
     case IO.gets(prompt) |> String.trim() |> converter.() do
       :error ->
         IO.puts(error_msg)
-        read_valid(prompt, converter, error_msg)
+        read_valid(prompt, error_msg, converter)
 
       v -> v
     end
@@ -17,6 +17,6 @@ defmodule Common.Stdio do
           _         -> :error
         end
     end
-    read_valid prompt, parseInt, error_msg
+    read_valid prompt, error_msg, parseInt
   end
 end
