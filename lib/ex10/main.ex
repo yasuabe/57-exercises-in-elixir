@@ -6,7 +6,7 @@
 # ・Separate input, processing, and output logic.
 # ・Ensure all input is converted to numeric types before calculations.
 
-import Common.Stdio
+import Common.IoExt
 
 defmodule Ex10.Main do
   def read_price_cent(n) do
@@ -23,7 +23,7 @@ defmodule Ex10.Main do
   end
 
   def read_quantity(n) do
-    read_int("Enter the quantity of item #{n}: ", "Invalid quantity")
+    read_valid_int("Enter the quantity of item #{n}: ", "Invalid quantity")
   end
 
   def read_item(n) do

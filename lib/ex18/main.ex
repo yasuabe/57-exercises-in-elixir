@@ -6,7 +6,7 @@
 # ・Convert using the appropriate formula.
 # ・Display the result using minimal and non-redundant output statements.
 
-import Common.Stdio
+import Common.IoExt
 
 defmodule TemperatureConversion do
   @type t :: :CtoF | :FtoC

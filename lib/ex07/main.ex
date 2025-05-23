@@ -6,12 +6,12 @@
 # ・Keep calculations separate from output.
 # ・Display both square feet and square meters in the output.
 
-import Common.Stdio
+import Common.IoExt
 
 defmodule Ex07.Main do
   def run do
-    length = read_int("What is the length of the room in feet? ", "Invalid length")
-    width  = read_int("What is the width of the room in feet? ", "Invalid width")
+    length = read_valid_int("What is the length of the room in feet? ", "Invalid length")
+    width  = read_valid_int("What is the width of the room in feet? ", "Invalid width")
 
     areaInFeet2  = length * width
     areaInMeter2 = areaInFeet2 * 0.09290304 * 1000 |> round() |> Kernel./(1000)
