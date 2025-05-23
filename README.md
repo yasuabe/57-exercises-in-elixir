@@ -17,7 +17,7 @@ A personal project to solve the exercises from the book *Exercises for Programme
 | Exercise | dependencies | Memo  | Lv.  |
 | -------- | -------------| ----- | -----:|
 | Ex07 [x] [Area of a Rectangular Room](lib/ex07/main.ex)    | | |2(1)
-| Ex08 [ ] [Pizza Party](lib/ex08/main.ex)                   | |
+| Ex08 [x] [Pizza Party](lib/ex08/main.ex)                   | | |1(1)
 | Ex09 [ ] [Paint Calculator](lib/ex09/main.ex)              | |
 | Ex10 [x] [Self-Checkout](lib/ex10/main.ex)                 | | money calculation | 3(2) 
 | Ex11 [ ] [Currency Conversion](lib/ex11/main.ex)           | |
@@ -134,3 +134,4 @@ $ mix test test/ex10/main_test.exs
 ## References
 - [Exercises for Programmers](https://www.oreilly.com/library/view/exercises-for-programmers/9781680501513/)
 - [Elixir Kernel (doc)](https://hexdocs.pm/elixir/1.18.3/Kernel.html)
+- [ExUnit](https://hexdocs.pm/ex_unit/api-reference.html)
