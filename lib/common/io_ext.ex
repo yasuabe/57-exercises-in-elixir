@@ -1,6 +1,11 @@
 defmodule Common.IoExt do
+
+  def read_trimmed(prompt) do
+    IO.gets(prompt) |> String.trim()
+  end
+
   def read_valid(prompt, error_msg, converter, condition \\ fn _ -> true end) do
-    case IO.gets(prompt) |> String.trim() |> converter.() do
+    case read_trimmed(prompt) |> converter.() do
       :error ->
         IO.puts(error_msg)
         read_valid(prompt, error_msg, converter, condition)

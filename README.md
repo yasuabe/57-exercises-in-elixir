@@ -56,7 +56,7 @@ A personal project to solve the exercises from the book *Exercises for Programme
 | -------- | -------------| ----- | -----:|
 | Ex33 [ ] [Magic 8 Ball](lib/ex33/main.ex)          | | | |
 | Ex34 [ ] [Employee List Removal](lib/ex34/main.ex) | | | |
-| Ex35 [ ] [Picking a Winner](lib/ex35/main.ex)      | | | |
+| Ex35 [x] [Picking a Winner](lib/ex35/main.ex)      | | |1(1)|
 | Ex36 [ ] [Computing Statistics](lib/ex36/main.ex)  | | | |
 | Ex37 [ ] [Password Generator](lib/ex37/main.ex)    | | | |
 | Ex38 [ ] [Filtering Values](lib/ex39/main.ex)      | | | |
