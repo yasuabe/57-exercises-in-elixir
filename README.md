@@ -74,7 +74,7 @@ A personal project to solve the exercises from the book *Exercises for Programme
 #### Chapter 9: Working with External Services
 | Exercise | dependencies | Memo  | Lv.  |
 | -------- | -------------| ----- | -----:|
-| Ex47 [ ] [Who’s in Space?](lib/ex47/main.ex)           | |     
+| Ex47 [x] [Who’s in Space?](lib/ex47/main.ex)           | |  |3(3)   
 | Ex48 [ ] [Grabbing the Weather](lib/ex48/main.ex)      | |          
 | Ex49 [ ] [Flickr Photo Search](lib/ex49/main.ex)       | | |
 | Ex50 [ ] [Movie Recommendations](lib/ex50/main.ex)     | |           
@@ -100,7 +100,8 @@ A personal project to solve the exercises from the book *Exercises for Programme
 - Elixir 1.18.3
 
 ### Dependency
-- TODO
+- [req](https://hexdocs.pm/req/readme.html)
+- [jason](https://hexdocs.pm/jason/readme.html)
 
 
 ## How to Run
