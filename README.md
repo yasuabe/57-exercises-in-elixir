@@ -68,7 +68,7 @@ A personal project to solve the exercises from the book *Exercises for Programme
 | Ex41 [ ] [Name Sorter](lib/ex41/main.ex)           | | | |
 | Ex42 [ ] [Parsing a Data File](lib/ex42/main.ex)   | | | |
 | Ex43 [ ] [Website Generator](lib/ex43/main.ex)     | | | |
-| Ex44 [ ] [Product Search](lib/ex44/main.ex)        | | | |
+| Ex44 [x] [Product Search](lib/ex44/main.ex)        | |file read, json parse | 2(2)|
 | Ex45 [ ] [Word Finder](lib/ex45/main.ex)           | | | |
 | Ex46 [ ] [Word Frequency Finder](lib/ex46/main.ex) | | | |
 #### Chapter 9: Working with External Services
