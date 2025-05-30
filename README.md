@@ -79,7 +79,7 @@ A personal project to solve the exercises from the book *Exercises for Programme
 | Ex49 [ ] [Flickr Photo Search](lib/ex49/main.ex)       | | |
 | Ex50 [ ] [Movie Recommendations](lib/ex50/main.ex)     | |           
 | Ex51 [ ] [Pushing Notes to Firebase](lib/ex51/main.ex) | | | | 
-| Ex52 [ ] [Creating Your Own Time Service](lib/ex52/) | | | 
+| Ex52 [x] [Creating Your Own Time Service](lib/ex52/) | plug, plug_cowboy| REST server/client | 3(3) 
 #### Chapter 10: Full Programs
 | Exercise | dependencies | Memo  | Lv.  |
 | -------- | -------------| ----- | -----:|
@@ -100,15 +100,20 @@ A personal project to solve the exercises from the book *Exercises for Programme
 - Elixir 1.18.3
 
 ### Dependency
-- [req](https://hexdocs.pm/req/readme.html)
-- [jason](https://hexdocs.pm/jason/readme.html)
-
+- [req](https://hexdocs.pm/req/readme.html) ... Req is a batteries-included HTTP client for Elixir. 
+- [cowboy](https://hex.pm/packages/cowboy) ... Small, fast, modern HTTP server.
+- [jason](https://hexdocs.pm/jason/readme.html) ... A blazing fast JSON parser and generator in pure Elixir.
+- [plug](https://hex.pm/packages/plug)... Compose web applications with functions
+- [plug_cowboy](https://hex.pm/packages/plug_cowboy) ... A Plug adapter for Cowboy
 
 ## How to Run
 ```
 $ mix run -e "Ex{{nn}}.Main.run()"
 ```
-
+or in `iex`,
+```
+iex(~)> Ex{{nn}}.Main.run
+```
 ### Example
 ```
 $ mix run -e "Ex03.Main.run()"
@@ -134,5 +139,6 @@ $ mix test test/ex10/main_test.exs
 
 ## References
 - [Exercises for Programmers](https://www.oreilly.com/library/view/exercises-for-programmers/9781680501513/)
-- [Elixir Kernel (doc)](https://hexdocs.pm/elixir/1.18.3/Kernel.html)
+- [hex](https://hex.pm/)
+  - [Elixir Kernel (doc)](https://hexdocs.pm/elixir/1.18.3/Kernel.html)
 - [ExUnit](https://hexdocs.pm/ex_unit/api-reference.html)
