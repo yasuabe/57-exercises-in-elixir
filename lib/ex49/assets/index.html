@@ -17,8 +17,6 @@
     Showing results for: <span id="search-term">None</span>
   </footer>
   <script>
-    const { ipcRenderer } = require('electron');
-
     function initializeGallery() {
       const gallery = document.getElementById('gallery');
       for (let i = 1; i <= 20; i++) {
@@ -29,17 +27,18 @@
         gallery.appendChild(img);
       }
     }
-    ipcRenderer.on('message-from-elixir', (event, message) => {
-      const urls = message;
+    window.electronAPI.onMessage((urls) => {
       Array.from({ length: 20 }, (_, i) => {
         document.getElementById(`img${String(i + 1).padStart(2, "0")}`).src = urls[i] || '';
       });
     });
+
     document.querySelector('.toolbar button').addEventListener('click', () => {
       const searchTerm = document.querySelector('.toolbar input').value;
-      ipcRenderer.send('search-images', searchTerm);
+      window.electronAPI.searchImages(searchTerm);
       document.getElementById('search-term').textContent = searchTerm || 'None';
     });
+
     document.addEventListener('DOMContentLoaded', initializeGallery);
   </script>
 </body>
