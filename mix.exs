@@ -23,6 +23,7 @@ defmodule Elixir57Exercises.MixProject do
     [
       {:req, "~> 0.4"},
       {:jason, "~> 1.4"},
+      {:httpoison, "~> 2.2"},
       {:plug, "~> 1.15"},
       {:plug_cowboy, "~> 2.6"}
     ]

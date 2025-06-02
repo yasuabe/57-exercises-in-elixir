@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Search App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="toolbar">
+    <input type="text" placeholder="Search images..." />
+    <button>Search</button>
+  </header>
+
+  <main class="gallery" id="gallery"></main>
+  <footer class="status-bar">
+    Showing results for: <span id="search-term">None</span>
+  </footer>
+  <script>
+    const { ipcRenderer } = require('electron');
+
+    function initializeGallery() {
+      const gallery = document.getElementById('gallery');
+      for (let i = 1; i <= 20; i++) {
+        const img = document.createElement('img');
+        img.id = `img${String(i).padStart(2, "0")}`;
+        img.alt = `Image ${i}`;
+        img.src = '';
+        gallery.appendChild(img);
+      }
+    }
+    ipcRenderer.on('message-from-elixir', (event, message) => {
+      const urls = message;
+      Array.from({ length: 20 }, (_, i) => {
+        document.getElementById(`img${String(i + 1).padStart(2, "0")}`).src = urls[i] || '';
+      });
+    });
+    document.querySelector('.toolbar button').addEventListener('click', () => {
+      const searchTerm = document.querySelector('.toolbar input').value;
+      ipcRenderer.send('search-images', searchTerm);
+      document.getElementById('search-term').textContent = searchTerm || 'None';
+    });
+    document.addEventListener('DOMContentLoaded', initializeGallery);
+  </script>
+</body>
+</html>

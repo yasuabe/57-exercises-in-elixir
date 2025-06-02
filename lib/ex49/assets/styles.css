@@ -1,0 +1,44 @@
+body {
+  display:          flex;
+  height:           100vh;
+  margin:           0;
+  flex-direction:   column;
+  background-color: #212121;
+}
+
+.status-bar,
+.toolbar {
+  display:    flex;
+  padding:    0.5rem;
+  background: #303030;
+  gap:        0.5rem;
+}
+.toolbar button ,
+.toolbar input  {
+  background: #414141;
+  border:     1px solid #616161;
+  color:      #e0e0e0;
+}
+.status-bar {
+  padding:   0.5rem;
+  font-size: 0.9rem;
+  color:     #e0e0e0;
+}
+
+.gallery {
+  display:               grid;
+  padding:               20px;
+  flex:                  1;
+  overflow-y:            auto;
+  grid-template-columns: repeat(5, 200px);
+  grid-template-rows:    repeat(4, 200px);
+  gap:                   4px;
+  justify-content:       center;
+}
+.gallery img {
+  width:      200px;
+  height:     200px;
+  max-width:  100%;
+  max-height: 200px;
+  object-fit: cover;
+}

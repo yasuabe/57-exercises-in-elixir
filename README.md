@@ -76,8 +76,8 @@ A personal project to solve the exercises from the book *Exercises for Programme
 | -------- | -------------| ----- | -----:|
 | Ex47 [x] [Who’s in Space?](lib/ex47/main.ex)           | |  |3(3)   
 | Ex48 [ ] [Grabbing the Weather](lib/ex48/main.ex)      | |          
-| Ex49 [ ] [Flickr Photo Search](lib/ex49/main.ex)       | | |
-| Ex50 [ ] [Movie Recommendations](lib/ex50/main.ex)     | |           
+| Ex49 [x] [Flickr Photo Search](lib/ex49/main.ex)       | jason, httpoison | actor model (`receive`), IPC(`Port`), Http Client (JSONP), (GUI: Electron) |5(4)
+| Ex50 [ ] [Movie Recommendations](lib/ex50/main.ex)     | | |         
 | Ex51 [ ] [Pushing Notes to Firebase](lib/ex51/main.ex) | | | | 
 | Ex52 [x] [Creating Your Own Time Service](lib/ex52/) | plug, plug_cowboy| REST server/client | 3(3) 
 #### Chapter 10: Full Programs
