@@ -26,7 +26,7 @@ A personal project to solve the exercises from the book *Exercises for Programme
 #### Chapter 4: Making Decisions
 | Exercise | dependencies | Memo  | Lv.  |
 | -------- | -------------| ----- | -----:|
-| Ex14 [ ] [Tax Calculator](lib/ex14/main.ex)                 | | | |
+| Ex14 [x] [Tax Calculator](lib/ex14/main.ex)                 | |money | 2(1)|
 | Ex15 [ ] [Password Validation](lib/ex15/main.ex)            | | | |
 | Ex16 [ ] [Legal Driving Age](lib/ex16/main.ex)              | | | |
 | Ex17 [ ] [Blood Alcohol Calculator](lib/ex17/main.ex)       | | | |
