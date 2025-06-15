@@ -2,7 +2,7 @@ defmodule Ex14.MainTest do
   use ExUnit.Case
   import ExUnit.CaptureIO
 
-  test "If the state is “WI,” then the order must be charged 5.5% tax." do
+  test "charges 5.5% tax for WI state" do
     inputs = """
       10
       WI
@@ -13,7 +13,8 @@ defmodule Ex14.MainTest do
     assert output =~ "The tax is $0.55."
     assert output =~ "The total is $10.55."
   end
-  test "If the state is not “WI,” then any tax will not be charged." do
+
+  test "charges no tax for non-WI states" do
     inputs = """
       10
       NM

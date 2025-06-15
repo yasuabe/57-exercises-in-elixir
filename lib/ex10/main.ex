@@ -6,20 +6,11 @@
 # ・Separate input, processing, and output logic.
 # ・Ensure all input is converted to numeric types before calculations.
 
-import Common.IoExt
+import Common.IoExt, only: [read_money: 2, read_valid_int: 2]
 
 defmodule Ex10.Main do
   def read_price_cent(n) do
-    read_valid(
-      "Enter the price of item #{n}: ",
-      "Invalid price.",
-      fn str ->
-        case Regex.run(~r/^(0|[1-9][0-9]*)(\.[0-9]{1,2})?$/, String.trim(str), capture: :first) do
-          nil -> :error
-          [s] -> String.trim(s) |> Float.parse() |> elem(0)
-        end
-      end
-    )
+    read_money("Enter the price of item #{n}: ", "Invalid price.")
   end
 
   def read_quantity(n) do
@@ -27,7 +18,7 @@ defmodule Ex10.Main do
   end
 
   def read_item(n) do
-    price    = read_price_cent(n) * 100
+    price = read_price_cent(n) * 100
     quantity = read_quantity(n)
     {price, quantity}
   end
@@ -44,24 +35,24 @@ defmodule Ex10.Main do
 
   def make_receipt(items) do
     subtotal = calculate_subtotal(items)
-    tax      = subtotal * 0.055
-    total    = subtotal + tax
+    tax = subtotal * 0.055
+    total = subtotal + tax
 
     {round(subtotal), round(tax), round(total)}
   end
 
   def print_receipt({subtotal, tax, total}) do
-    fmt = &(:io.format("$~s: $~.2f\n", [&1, &2 / 100]))
+    fmt = &:io.format("$~s: $~.2f\n", [&1, &2 / 100])
 
     fmt.("Subtotal", subtotal)
-    fmt.("Tax"     , tax)
-    fmt.("Total"   , total)
+    fmt.("Tax", tax)
+    fmt.("Total", total)
   end
 
   def run do
-    items   = read_items()
+    items = read_items()
     receipt = make_receipt(items)
 
-    print_receipt receipt
+    print_receipt(receipt)
   end
 end
