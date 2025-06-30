@@ -11,7 +11,7 @@ A personal project to solve the exercises from the book *Exercises for Programme
 | Ex02 [x] [Counting the Number of Characters](lib/ex02/main.ex) | | |1(1)
 | Ex03 [x] [Printing Quotes](lib/ex03/main.ex)                   | | |1(1)
 | Ex04 [x] [Mad Lib](lib/ex04/main.ex)                           | | string interpolation |1(1)
-| Ex05 [ ] [Simple Math](lib/ex05/main.ex)                       | | |
+| Ex05 [x] [Simple Math](lib/ex05/main.ex)                       | | |1(1)
 | Ex06 [ ] [Retirement Calculator](lib/ex06/main.ex)             | | |
 #### Chapter 3: Calculations
 | Exercise | dependencies | Memo  | Lv.  |

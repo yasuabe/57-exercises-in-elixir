@@ -14,16 +14,28 @@ defmodule Common.IoExt do
     end
   end
 
-  def parse_int_with_condition(str, condition \\ fn _ -> true end) do
-    case Integer.parse(str) do
-      {int, ""} ->
-        if condition.(int), do: int, else: :error
+  def parse_with_condition(str, converter, condition \\ fn _ -> true end) do
+    case converter.(str) do
+      {v, ""} ->
+        if condition.(v), do: v, else: :error
       _ -> :error
     end
   end
 
+  def parse_int_with_condition(str, condition \\ fn _ -> true end) do
+    parse_with_condition(str, &Integer.parse/1, condition)
+  end
+
+  def parse_float_with_condition(str, condition \\ fn _ -> true end) do
+    parse_with_condition(str, &Float.parse/1, condition)
+  end
+
   def read_valid_int(prompt, error_msg) do
     read_valid(prompt, error_msg, &parse_int_with_condition(&1))
+  end
+
+  def read_valid_float(prompt, error_msg) do
+    read_valid(prompt, error_msg, &parse_float_with_condition(&1))
   end
 
   def read_valid_non_nega_int(prompt, error_msg) do
