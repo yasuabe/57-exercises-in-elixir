@@ -33,8 +33,8 @@ A personal project to solve the exercises from the book *Exercises for Programme
 | Ex18 [ ] [Temperature Converter](lib/ex18/main.ex)          | | | |
 | Ex19 [ ] [BMI Calculator](lib/ex19/main.ex)                 | | | |
 | Ex20 [ ] [Multistate Sales Tax Calculator](lib/ex20/main.ex)| | | |
-| Ex21 [ ] [Numbers to Names](lib/ex21/main.ex)               | | | |
-| Ex22 [ ] [Comparing Numbers](lib/ex22/main.ex)              | | | |
+| Ex21 [x] [Numbers to Names](lib/ex21/main.ex)               | | | 2(1) |
+| Ex22 [x] [Comparing Numbers](lib/ex22/main.ex)              | | | 2(1) |
 | Ex23 [ ] [Troubleshooting Car Issues](lib/ex23/main.ex)     | | | |
 #### Chapter 5: Functions
 | Exercise | dependencies | Memo  | Lv.  |
