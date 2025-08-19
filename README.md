@@ -42,7 +42,7 @@ A personal project to solve the exercises from the book *Exercises for Programme
 | Ex24 [ ] [Anagram Checker](lib/ex24/main.ex)                 | | | |
 | Ex25 [ ] [Password Strength Indicator](lib/ex25/main.ex)     | | | |
 | Ex26 [ ] [Months to Pay Off a Credit Card](lib/ex26/main.ex) | | | |
-| Ex27 [ ] [Validating Inputs](lib/ex27/main.ex)               | | | |
+| Ex27 [x] [Validating Inputs](lib/ex27/main.ex)               | | | 3(2)|
 #### Chapter 6: Repetition
 | Exercise | dependencies | Memo  | Lv.  |
 | -------- | -------------| ----- | -----:|

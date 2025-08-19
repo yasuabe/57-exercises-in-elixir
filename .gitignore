@@ -21,3 +21,7 @@ elixir_57_exercises-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# Editor files
+.vscode/
+.editorconfig
