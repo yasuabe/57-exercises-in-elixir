@@ -46,7 +46,7 @@ A personal project to solve the exercises from the book *Exercises for Programme
 #### Chapter 6: Repetition
 | Exercise | dependencies | Memo  | Lv.  |
 | -------- | -------------| ----- | -----:|
-| Ex28 [ ] [Adding Numbers](lib/ex28/main.ex)        | | | |
+| Ex28 [x] [Adding Numbers](lib/ex28/main.ex)        | | | 2(1) |
 | Ex29 [ ] [Handling Bad Input](lib/ex29/main.ex)    | | | |
 | Ex30 [ ] [Multiplication Table](lib/ex30/main.ex)  | | | |
 | Ex31 [ ] [Karvonen Heart Rate](lib/ex31/main.ex)   | | | |
