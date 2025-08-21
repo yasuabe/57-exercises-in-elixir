@@ -42,6 +42,10 @@ defmodule Common.IoExt do
     read_valid(prompt, error_msg, &parse_int_with_condition(&1, fn x -> x >= 0 end))
   end
 
+  def read_valid_natural_number(prompt, error_msg) do
+    read_valid(prompt, error_msg, &parse_int_with_condition(&1, fn x -> x > 0 end))
+  end
+
   def read_money(prompt, error_msg) do
     read_valid(prompt, error_msg, fn str ->
       case Regex.run(~r/^(0|[1-9][0-9]*)(\.[0-9]{1,2})?$/, String.trim(str), capture: :first) do

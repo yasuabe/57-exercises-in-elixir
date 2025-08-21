@@ -47,7 +47,7 @@ A personal project to solve the exercises from the book *Exercises for Programme
 | Exercise | dependencies | Memo  | Lv.  |
 | -------- | -------------| ----- | -----:|
 | Ex28 [x] [Adding Numbers](lib/ex28/main.ex)        | | | 2(1) |
-| Ex29 [ ] [Handling Bad Input](lib/ex29/main.ex)    | | | |
+| Ex29 [x] [Handling Bad Input](lib/ex29/main.ex)    | | | 2(1)|
 | Ex30 [ ] [Multiplication Table](lib/ex30/main.ex)  | | | |
 | Ex31 [ ] [Karvonen Heart Rate](lib/ex31/main.ex)   | | | |
 | Ex32 [ ] [Guess the Number Game](lib/ex32/main.ex) | | | |
