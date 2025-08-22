@@ -142,3 +142,4 @@ $ mix test test/ex10/main_test.exs
 - [hex](https://hex.pm/)
   - [Elixir Kernel (doc)](https://hexdocs.pm/elixir/1.18.3/Kernel.html)
 - [ExUnit](https://hexdocs.pm/ex_unit/api-reference.html)
+- [The Elixir Style Guide](https://github.com/christopheradams/elixir_style_guide)
