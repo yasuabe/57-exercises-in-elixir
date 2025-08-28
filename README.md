@@ -21,7 +21,7 @@ A personal project to solve the exercises from the book *Exercises for Programme
 | Ex09 [ ] [Paint Calculator](lib/ex09/main.ex)              | |
 | Ex10 [x] [Self-Checkout](lib/ex10/main.ex)                 | | money calculation | 3(2) 
 | Ex11 [ ] [Currency Conversion](lib/ex11/main.ex)           | |
-| Ex12 [ ] [Computing Simple Interest](lib/ex12/main.ex)     | |
+| Ex12 [x] [Computing Simple Interest](lib/ex12/main.ex)     | | | 1(1)|
 | Ex13 [ ] [Determining Compound Interest](lib/ex13/main.ex) | | | |
 #### Chapter 4: Making Decisions
 | Exercise | dependencies | Memo  | Lv.  |
@@ -57,7 +57,7 @@ A personal project to solve the exercises from the book *Exercises for Programme
 | Ex33 [ ] [Magic 8 Ball](lib/ex33/main.ex)          | | | |
 | Ex34 [ ] [Employee List Removal](lib/ex34/main.ex) | | | |
 | Ex35 [x] [Picking a Winner](lib/ex35/main.ex)      | | |1(1)|
-| Ex36 [ ] [Computing Statistics](lib/ex36/main.ex)  | | | |
+| Ex36 [x] [Computing Statistics](lib/ex36/main.ex)  | | |2(2) |
 | Ex37 [ ] [Password Generator](lib/ex37/main.ex)    | | | |
 | Ex38 [ ] [Filtering Values](lib/ex39/main.ex)      | | | |
 | Ex39 [ ] [Sorting Records](lib/ex39/main.ex)       | | | |
@@ -143,3 +143,4 @@ $ mix test test/ex10/main_test.exs
   - [Elixir Kernel (doc)](https://hexdocs.pm/elixir/1.18.3/Kernel.html)
 - [ExUnit](https://hexdocs.pm/ex_unit/api-reference.html)
 - [The Elixir Style Guide](https://github.com/christopheradams/elixir_style_guide)
+- [Erlang/OTP 28.0.2](https://www.erlang.org/doc/readme.html)
