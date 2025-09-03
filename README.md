@@ -31,7 +31,7 @@ A personal project to solve the exercises from the book *Exercises for Programme
 | Ex16 [ ] [Legal Driving Age](lib/ex16/main.ex)              | | | |
 | Ex17 [ ] [Blood Alcohol Calculator](lib/ex17/main.ex)       | | | |
 | Ex18 [ ] [Temperature Converter](lib/ex18/main.ex)          | | | |
-| Ex19 [ ] [BMI Calculator](lib/ex19/main.ex)                 | | | |
+| Ex19 [x] [BMI Calculator](lib/ex19/main.ex)                 | | | 2(1)|
 | Ex20 [ ] [Multistate Sales Tax Calculator](lib/ex20/main.ex)| | | |
 | Ex21 [x] [Numbers to Names](lib/ex21/main.ex)               | | | 2(1) |
 | Ex22 [x] [Comparing Numbers](lib/ex22/main.ex)              | | | 2(1) |
