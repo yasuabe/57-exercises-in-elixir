@@ -46,6 +46,10 @@ defmodule Common.IoExt do
     read_valid(prompt, error_msg, &parse_int_with_condition(&1, fn x -> x > 0 end))
   end
 
+  def read_valid_float_with_condition(prompt, error_msg, condition) do
+    read_valid(prompt, error_msg, &parse_float_with_condition(&1, condition))
+  end
+
   def read_money(prompt, error_msg) do
     read_valid(prompt, error_msg, fn str ->
       case Regex.run(~r/^(0|[1-9][0-9]*)(\.[0-9]{1,2})?$/, String.trim(str), capture: :first) do
